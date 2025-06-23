@@ -1,27 +1,3 @@
-<!-- <IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # Redirect requests to index.php
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^ index.php [L]
-</IfModule>
-
-# --- SECURITY ---
-
-# Block .env, .git, composer files, etc.
-<FilesMatch "^(\.env|\.git|\.gitignore|\.gitattributes|composer\.json|composer\.lock|package\.json|package-lock\.json|yarn\.lock|artisan|server\.php|phpunit\.xml|webpack\.mix\.js|vite\.config\.js|readme\.md|readme\.txt)$">
-    Require all denied
-</FilesMatch>
-
-# Prevent directory listing
-Options -Indexes
-
-# Disable PHP execution in storage and uploads (optional but recommended)
-<Directory "/storage">
-    php_flag engine off
-</Directory> -->
-
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes

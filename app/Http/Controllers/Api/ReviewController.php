@@ -10,7 +10,7 @@ class ReviewController extends Controller
 {
     public function index()
     {
-        return Review::latest()->take(6)->get();
+        return Review::latest()->take(9)->get();
     }
 
     public function store(Request $request)

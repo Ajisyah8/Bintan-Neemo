@@ -31,6 +31,7 @@ export default function Testimonial() {
         }, 5000);
         return () => clearInterval(interval);
     }, [totalSlidesLimited]);
+
     useEffect(() => {
         fetch("/api/reviews")
             .then((res) => res.json())
@@ -87,6 +88,7 @@ export default function Testimonial() {
                 >
                     Leave a Review
                 </button>
+
                 {showModal && (
                     <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50 p-4">
                         <div className="bg-white p-6 sm:p-8 rounded-lg w-full max-w-md shadow-lg">
@@ -184,6 +186,7 @@ export default function Testimonial() {
                         </div>
                     </div>
                 )}
+
                 <div className="relative overflow-hidden mt-10">
                     <div
                         className="flex transition-transform duration-500 ease-in-out"
@@ -230,9 +233,10 @@ export default function Testimonial() {
                                                 <p className="font-bold text-gray-800 text-sm sm:text-base">
                                                     {item.name}
                                                 </p>
-                                                <p className="text-xs sm:text-sm text-gray-500">
+                                                {/* Phone hidden */}
+                                                {/* <p className="text-xs sm:text-sm text-gray-500">
                                                     {item.phone}
-                                                </p>
+                                                </p> */}
                                                 <p className="text-xs sm:text-sm text-gray-500">
                                                     {item.address}
                                                 </p>
@@ -258,6 +262,7 @@ export default function Testimonial() {
                             </div>
                         ))}
                     </div>
+
                     <div className="flex justify-center mt-6 gap-3 sm:gap-2">
                         {chunkedSlides.map((_, i) => (
                             <button
