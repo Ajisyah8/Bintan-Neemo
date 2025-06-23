@@ -17,8 +17,9 @@ export default function Map() {
                     below. Please make your way to the following address:
                     <br />
                     <strong>
-                        Tlk. Bakau, Gn. Kijang District, Bintan Regency, Riau
-                        Islands
+                        40th Km, Trikora Beach Road, Teluk Bakau, Gunung Kijang
+                        District, Bintan Regency, Riau Islands Province, 29151,
+                        Indonesia
                     </strong>
                 </p>
 
