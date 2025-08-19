@@ -4,8 +4,8 @@ import logo from "../UI/images/Bintan Neemo.webp";
 export default function Footer() {
     return (
         <footer className="bg-[#22242A] text-white font-montserrat text-sm">
-            <div className="max-w-7xl mx-auto px-6 py-6">
-                <div className="flex flex-col md:flex-row gap-6 items-start md:items-center w-full">
+            <div className="px-6 py-6 mx-auto max-w-7xl">
+                <div className="flex flex-col gap-6 items-start w-full md:flex-row md:items-center">
                     <div className="flex-shrink-0">
                         <img
                             src={logo}
@@ -14,9 +14,9 @@ export default function Footer() {
                         />
                     </div>
 
-                    <div className="flex-1 flex flex-col gap-4 w-full">
-                        <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center w-full">
-                            <ul className="flex flex-wrap gap-4 md:gap-6 text-gray-300">
+                    <div className="flex flex-col flex-1 gap-4 w-full">
+                        <div className="flex flex-col gap-4 w-full md:flex-row md:justify-between md:items-center">
+                            <ul className="flex flex-wrap gap-4 text-gray-300 md:gap-6">
                                 <li>
                                     <a
                                         href="#home"
@@ -56,11 +56,11 @@ export default function Footer() {
                                 </li>
                             </ul>
 
-                            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                                <p className="font-semibold whitespace-nowrap text-sm">
+                            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+                                <p className="text-sm font-semibold whitespace-nowrap">
                                     Plan Your Trip with Us
                                 </p>
-                                <div className="flex gap-4 text-white text-lg">
+                                <div className="flex gap-4 text-lg text-white">
                                     <a
                                         href="mailto:bintan.neemo@gmail.com"
                                         aria-label="Email"
@@ -70,7 +70,7 @@ export default function Footer() {
                                         <FaEnvelope />
                                     </a>
                                     <a
-                                        href="https://wa.me/6285356282470"
+                                        href="https://wa.me/6281364656341"
                                         aria-label="WhatsApp"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -99,7 +99,7 @@ export default function Footer() {
 
                         <hr className="border-t border-gray-500" />
 
-                        <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center text-xs text-gray-400">
+                        <div className="flex flex-col gap-2 text-xs text-gray-400 md:flex-row md:justify-between md:items-center">
                             <ul className="flex flex-wrap gap-4 md:gap-6">
                                 <li className="cursor-pointer hover:text-white">
                                     <a href="/privacy-policy">Privacy Policy</a>

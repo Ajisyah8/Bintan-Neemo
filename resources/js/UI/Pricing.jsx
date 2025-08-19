@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 const packages = [
     {
         title: "2 Days 1 Night",
-        price: "$100",
+        price: "SGD $100",
         unit: "/ Person",
         features: [
             "Boat (Two ways)",
@@ -21,7 +21,7 @@ const packages = [
     },
     {
         title: "Day Trip",
-        price: "$45",
+        price: "SGD $45",
         unit: "/ Person",
         features: [
             "Boat (Two ways)",
@@ -36,7 +36,7 @@ const packages = [
     },
     {
         title: "Day Trip + Lunch",
-        price: "$65",
+        price: "SGD $65",
         unit: "/ Person",
         features: [
             "Boat (Two ways)",
@@ -58,7 +58,7 @@ export default function Pricing() {
             id="pricing"
             className="bg-[#FDF6E3] font-[Montserrat] py-20 px-4"
         >
-            <div className="max-w-5xl mx-auto text-center mb-12">
+            <div className="mx-auto mb-12 max-w-5xl text-center">
                 <h2 className="text-[#005A8D] text-lg font-semibold">
                     Our Main Activities
                 </h2>
@@ -67,14 +67,14 @@ export default function Pricing() {
                 </h1>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 gap-8 mx-auto max-w-6xl md:grid-cols-3">
                 {packages.map((pkg, idx) => (
                     <div
                         key={idx}
                         className={`rounded-2xl shadow-xl p-8 flex flex-col justify-between transition transform hover:scale-[1.02] ${pkg.cardStyle}`}
                     >
                         <div>
-                            <h2 className="text-2xl font-bold mb-1">
+                            <h2 className="mb-1 text-2xl font-bold">
                                 {pkg.title}
                             </h2>
                             <div className="flex items-baseline mb-6">
@@ -90,7 +90,7 @@ export default function Pricing() {
                                 {pkg.features.map((item, i) => (
                                     <li
                                         key={i}
-                                        className="flex items-start gap-2"
+                                        className="flex gap-2 items-start"
                                     >
                                         <CheckCircle
                                             size={18}
