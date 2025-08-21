@@ -39,27 +39,27 @@ export default function Hero() {
             />
             <section
                 id="home"
-                className="relative w-full min-h-screen flex flex-col items-center text-white bg-cover bg-center px-4 overflow-hidden"
+                className="relative flex flex-col items-center w-full min-h-screen px-4 overflow-hidden text-white bg-center bg-cover"
                 style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(0,150,199,0.7), rgba(2,62,138,0.7)), url(${backgroundImage})`,
                 }}
             >
                 {/* Header with Animation */}
                 <motion.div
-                    className="w-full flex flex-col items-center"
+                    className="flex flex-col items-center w-full"
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
                 >
-                    <header className="w-full py-4 px-4 md:px-8 z-10 relative">
-                        <div className="container mx-auto flex flex-col md:flex-row md:justify-center items-center">
+                    <header className="relative z-10 w-full px-4 py-4 md:px-8">
+                        <div className="container flex flex-col items-center mx-auto md:flex-row md:justify-center">
                             {/* Desktop Navigation */}
-                            <nav className="hidden md:flex items-center space-x-10">
+                            <nav className="items-center hidden space-x-10 md:flex">
                                 {["about", "pricing"].map((item) => (
                                     <a
                                         key={item}
                                         href={`#${item}`}
-                                        className="text-white hover:text-cyan-100 cursor-pointer"
+                                        className="text-white cursor-pointer hover:text-cyan-100"
                                         onClick={(e) => {
                                             e.preventDefault();
                                             document
@@ -87,7 +87,7 @@ export default function Hero() {
                                     <a
                                         key={item}
                                         href={`#${item}`}
-                                        className="text-white hover:text-cyan-100 cursor-pointer"
+                                        className="text-white cursor-pointer hover:text-cyan-100"
                                         onClick={(e) => {
                                             e.preventDefault();
                                             document
@@ -104,7 +104,7 @@ export default function Hero() {
                             </nav>
 
                             {/* Mobile Toggle */}
-                            <div className="md:hidden flex justify-between items-center w-full px-2 relative z-40">
+                            <div className="relative z-40 flex items-center justify-between w-full px-2 md:hidden">
                                 <img
                                     src={Logo}
                                     alt="Logo"
@@ -114,7 +114,7 @@ export default function Hero() {
                                 />
                                 <button
                                     onClick={() => setMenuOpen(!menuOpen)}
-                                    className="text-white focus:outline-none z-40"
+                                    className="z-40 text-white focus:outline-none"
                                     aria-label="Toggle menu"
                                 >
                                     <svg
@@ -146,7 +146,7 @@ export default function Hero() {
                         >
                             <button
                                 onClick={() => setMenuOpen(false)}
-                                className="absolute top-4 right-4 text-white"
+                                className="absolute text-white top-4 right-4"
                                 aria-label="Close menu"
                             >
                                 <svg
@@ -177,7 +177,7 @@ export default function Hero() {
                                             });
                                         setMenuOpen(false);
                                     }}
-                                    className="text-white text-lg font-medium hover:text-cyan-100 cursor-pointer"
+                                    className="text-lg font-medium text-white cursor-pointer hover:text-cyan-100"
                                 >
                                     {item.charAt(0).toUpperCase() +
                                         item.slice(1)}
@@ -188,8 +188,8 @@ export default function Hero() {
                 </motion.div>
 
                 {/* Hero Content Without Animation on h1 */}
-                <div className="flex-grow flex flex-col justify-center items-center mt-4 lg:mt-10 md:-mt-10 px-4 md:px-0">
-                    <div className="text-center max-w-2xl">
+                <div className="flex flex-col items-center justify-center flex-grow px-4 mt-4 lg:mt-10 md:-mt-10 md:px-0">
+                    <div className="max-w-2xl text-center">
                         <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-white text-center [text-wrap:balance]">
                             Discover Nemo & Beyond in Bintan's Hidden Paradise
                         </h1>
@@ -197,9 +197,9 @@ export default function Hero() {
                             A unique sea experience to explore Bintan's marine
                             beauty, all from our floating house.
                         </p>
-                        <div className="relative z-0 flex gap-4 mt-8 justify-center w-full flex-wrap">
+                        <div className="relative z-0 flex flex-wrap justify-center w-full gap-4 mt-8">
                             <a
-                                href="https://wa.me/6282283649331?text=Hello%20Bintan%20Neemo%2C%20I%20would%20like%20to%20make%20a%20booking"
+                                href="https://wa.me/6281364656341?text=Hello%20Bintan%20Neemo%2C%20I%20would%20like%20to%20make%20a%20booking"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white text-[#005A8D] hover:bg-slate-500 hover:text-white px-6 py-2 rounded-full font-bold transition"
@@ -225,7 +225,7 @@ export default function Hero() {
                 </div>
 
                 {/* Desktop Image Section */}
-                <div className="hidden md:flex justify-center w-full gap-0 relative z-10">
+                <div className="relative z-10 justify-center hidden w-full gap-0 md:flex">
                     <motion.img
                         src={Boat}
                         alt="Kayaking"
@@ -264,7 +264,7 @@ export default function Hero() {
                 </div>
 
                 {/* Mobile Image Section */}
-                <div className="md:hidden flex flex-col items-center gap-6 mt-12 px-4 pb-12">
+                <div className="flex flex-col items-center gap-6 px-4 pb-12 mt-12 md:hidden">
                     <motion.div
                         className="w-full h-[250px] rounded-2xl shadow-xl transform -rotate-6 scale-105"
                         initial={{ opacity: 0, y: 10, rotate: -6 }}
@@ -274,7 +274,7 @@ export default function Hero() {
                         <img
                             src={Boat}
                             alt="Kayaking"
-                            className="w-full h-full object-cover rounded-2xl"
+                            className="object-cover w-full h-full rounded-2xl"
                             loading="eager"
                             decoding="async"
                             fetchpriority="high"
@@ -302,7 +302,7 @@ export default function Hero() {
                         <img
                             src={Snorkling}
                             alt="Snorkeling"
-                            className="w-full h-full object-cover rounded-2xl"
+                            className="object-cover w-full h-full rounded-2xl"
                             loading="eager"
                             decoding="async"
                             fetchpriority="high"

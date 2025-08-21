@@ -6,6 +6,7 @@ const packages = [
         title: "2 Days 1 Night",
         price: "SGD $100",
         unit: "/ Person",
+        whatsappMessage: "Hello, I want to go to Bintan Neemo with the 2 Days 1 Night package (SGD $100). Could you please provide more information?",
         features: [
             "Boat (Two ways)",
             "Seafood Dinner (Crabs, Prawns, Cuttlefish, Scallops, Clams, Fish, Vegetables)",
@@ -23,6 +24,7 @@ const packages = [
         title: "Day Trip",
         price: "SGD $45",
         unit: "/ Person",
+        whatsappMessage: "Hello, I want to go to Bintan Neemo with the Day Trip package (SGD $45). Could you please provide more information?",
         features: [
             "Boat (Two ways)",
             "Unlimited Snorkeling, Kayaking, Funfishing",
@@ -38,6 +40,7 @@ const packages = [
         title: "Day Trip + Lunch",
         price: "SGD $65",
         unit: "/ Person",
+        whatsappMessage: "Hello, I want to go to Bintan Neemo with the Day Trip + Lunch package (SGD $65). Could you please provide more information?",
         features: [
             "Boat (Two ways)",
             "Unlimited Snorkeling, Kayaking, Funfishing",
@@ -105,10 +108,8 @@ export default function Pricing() {
                         <button
                             className={`mt-8 px-6 py-3 rounded-full font-semibold text-sm transition ${pkg.buttonStyle}`}
                             onClick={() => {
-                                window.open(
-                                    "https://wa.me/6282283649331?text=Hi%20Bintan%20Neemo!%20I%27m%20interested%20in%20the%20holiday%20package%20you%20offer.%20Could%20you%20please%20provide%20more%20information?",
-                                    "_blank"
-                                );
+                                const whatsappUrl = "https://wa.me/6282283649331?text=" + encodeURIComponent(pkg.whatsappMessage);
+                                window.open(whatsappUrl, "_blank");
                             }}
                         >
                             Choose Package →
