@@ -2,10 +2,12 @@ import { FaInstagram, FaPhone, FaTiktok, FaEnvelope } from "react-icons/fa";
 import logo from "../UI/images/Bintan Neemo.webp";
 
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer className="bg-[#22242A] text-white font-montserrat text-sm">
-            <div className="px-6 py-6 mx-auto max-w-7xl">
-                <div className="flex flex-col gap-6 items-start w-full md:flex-row md:items-center">
+        <footer className="bg-[#22242A] text-sm text-white font-montserrat">
+            <div className="mx-auto max-w-7xl px-6 py-6">
+                <div className="flex w-full flex-col items-start gap-6 md:flex-row md:items-center">
                     <div className="flex-shrink-0">
                         <img
                             src={logo}
@@ -14,38 +16,26 @@ export default function Footer() {
                         />
                     </div>
 
-                    <div className="flex flex-col flex-1 gap-4 w-full">
-                        <div className="flex flex-col gap-4 w-full md:flex-row md:justify-between md:items-center">
+                    <div className="flex w-full flex-1 flex-col gap-4">
+                        <div className="flex w-full flex-col gap-4 md:flex-row md:items-center md:justify-between">
                             <ul className="flex flex-wrap gap-4 text-gray-300 md:gap-6">
                                 <li>
-                                    <a
-                                        href="#home"
-                                        className="hover:text-white"
-                                    >
+                                    <a href="#home" className="hover:text-white">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#about"
-                                        className="hover:text-white"
-                                    >
+                                    <a href="#about" className="hover:text-white">
                                         About
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#pricing"
-                                        className="hover:text-white"
-                                    >
+                                    <a href="#pricing" className="hover:text-white">
                                         Pricing
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#gallery"
-                                        className="hover:text-white"
-                                    >
+                                    <a href="#gallery" className="hover:text-white">
                                         Gallery
                                     </a>
                                 </li>
@@ -57,7 +47,7 @@ export default function Footer() {
                             </ul>
 
                             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-                                <p className="text-sm font-semibold whitespace-nowrap">
+                                <p className="whitespace-nowrap text-sm font-semibold">
                                     Plan Your Trip with Us
                                 </p>
                                 <div className="flex gap-4 text-lg text-white">
@@ -99,7 +89,7 @@ export default function Footer() {
 
                         <hr className="border-t border-gray-500" />
 
-                        <div className="flex flex-col gap-2 text-xs text-gray-400 md:flex-row md:justify-between md:items-center">
+                        <div className="flex flex-col gap-2 text-xs text-gray-400 md:flex-row md:items-center md:justify-between">
                             <ul className="flex flex-wrap gap-4 md:gap-6">
                                 <li className="cursor-pointer hover:text-white">
                                     <a href="/privacy-policy">Privacy Policy</a>
@@ -117,7 +107,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                             <p className="text-left md:text-right">
-                                © 2025 All Rights Reserved
+                                {`© ${currentYear} All Rights Reserved`}
                             </p>
                         </div>
                     </div>

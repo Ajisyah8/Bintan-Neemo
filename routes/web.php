@@ -28,6 +28,18 @@ Route::get('/legal', function () {
     return Inertia::render('Policy/Legal', []);
 });
 
+Route::get('/approval-preview/packages', function () {
+    return Inertia::render('Approval/Packages', []);
+});
+
+Route::get('/approval-preview/transportation', function () {
+    return Inertia::render('Approval/Transportation', []);
+});
+
+Route::get('/approval-preview/destination', function () {
+    return Inertia::render('Approval/Destination', []);
+});
+
 // Rute untuk mengenerate sitemap
 Route::get('/sitemap', function () {
     // Membuat instance sitemap
