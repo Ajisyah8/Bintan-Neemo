@@ -1,0 +1,320 @@
+{
+  "resources/js/Pages/Home.jsx": {
+    "file": "assets/Home-DMV2nZEh.js",
+    "name": "Home",
+    "src": "resources/js/Pages/Home.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "assets": [
+      "assets/Neemo-DNce7dXz.webp",
+      "assets/Bintan Neemo-CXGIM7Eh.webp",
+      "assets/Boat-BiwN94Wj.webp",
+      "assets/Tourism-DJYHjukP.webp",
+      "assets/Snorkling-UB756Wy6.webp",
+      "assets/NeemoKel-CC31g2bm.webp",
+      "assets/Rompi-Qkt8jH-k.webp",
+      "assets/Beauty-DXR1kcZu.webp",
+      "assets/Nemo-DDdLW4XI.webp",
+      "assets/Snorkeling-CYS9ZOed.webp",
+      "assets/Sunset-lJrZHt3t.webp",
+      "assets/Jetski-Q9ElVtNk.webp",
+      "assets/lifeatkelong-DxUm-BxK.webp",
+      "assets/lifeatkelong2-Dw80L4cW.webp",
+      "assets/islandtour-a8J84Xwv.webp",
+      "assets/islandtour2-BXX7QsLF.webp",
+      "assets/Snorkeling-D3NQuuCE.webp",
+      "assets/islandtour3-Di6L74tz.webp",
+      "assets/Snorkeling2-yNivkIa-.webp",
+      "assets/lifeatkelong3-oSovdeOi.webp",
+      "assets/snorkeling3-JJE12H4P.webp",
+      "assets/snorkeling4-DV1Wrjea.webp",
+      "assets/snorkeling5-Ck_W01-S.webp",
+      "assets/snorkeling6-K661rHnk.webp",
+      "assets/snorkeling7-CU9w1dAs.webp",
+      "assets/snorkeling8-C_DVQfgU.webp",
+      "assets/islandtour4-DIxGuw-H.webp",
+      "assets/lifeatkelong4-CBHSiL0-.webp",
+      "assets/lifeatkelong5-BhpSpvMl.webp",
+      "assets/lifeatkelong6-CShnFCVL.webp",
+      "assets/lifeatkelong7-D1KjiCNj.webp",
+      "assets/lifeatkelong8-PYWu6xjV.webp",
+      "assets/islandtour5-DL84A9_b.webp",
+      "assets/islandtour6-Bg8RVX_e.webp",
+      "assets/islandtour7-D6QmS5SM.webp",
+      "assets/islandtour8-CqxS_zak.webp",
+      "assets/Lagoi-D4G2P-kM.webp",
+      "assets/TreasureBay-hWUih9vA.webp",
+      "assets/PasirPutih-I9kI1KdH.webp",
+      "assets/Trikora-BPEHPOTY.webp",
+      "assets/CrystalLagoon-CFjMueA_.webp",
+      "assets/ViharaAvalokitesvara-CShEIPH3.webp",
+      "assets/SafariLagoi-DTRhvz8G.webp",
+      "assets/danaubiru-BNqxvlkO.webp",
+      "assets/Desa-DTOgb-wx.webp",
+      "assets/Penyengat-nuNa9aY3.webp",
+      "assets/Mangrove-DDZPIpj5.webp",
+      "assets/BanyanTree-BT-d1kj7.webp",
+      "assets/transport-1-C32IU8GV.png",
+      "assets/Majorly-BT74Db6Q.png",
+      "assets/Residence-Buq9rc6h.png"
+    ]
+  },
+  "resources/js/Pages/Policy/Legal.jsx": {
+    "file": "assets/Legal-D0ROdgQR.js",
+    "name": "Legal",
+    "src": "resources/js/Pages/Policy/Legal.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/Pages/Policy/Privacy.jsx": {
+    "file": "assets/Privacy-CL7pK7mf.js",
+    "name": "Privacy",
+    "src": "resources/js/Pages/Policy/Privacy.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/Pages/Policy/SalesAndRefunds.jsx": {
+    "file": "assets/SalesAndRefunds-BItKC1hE.js",
+    "name": "SalesAndRefunds",
+    "src": "resources/js/Pages/Policy/SalesAndRefunds.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/Pages/Policy/Terms.jsx": {
+    "file": "assets/Terms-Dp9tNwz7.js",
+    "name": "Terms",
+    "src": "resources/js/Pages/Policy/Terms.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/UI/Destinations/BanyanTree.webp": {
+    "file": "assets/BanyanTree-BT-d1kj7.webp",
+    "src": "resources/js/UI/Destinations/BanyanTree.webp"
+  },
+  "resources/js/UI/Destinations/CrystalLagoon.webp": {
+    "file": "assets/CrystalLagoon-CFjMueA_.webp",
+    "src": "resources/js/UI/Destinations/CrystalLagoon.webp"
+  },
+  "resources/js/UI/Destinations/Desa.webp": {
+    "file": "assets/Desa-DTOgb-wx.webp",
+    "src": "resources/js/UI/Destinations/Desa.webp"
+  },
+  "resources/js/UI/Destinations/Lagoi.webp": {
+    "file": "assets/Lagoi-D4G2P-kM.webp",
+    "src": "resources/js/UI/Destinations/Lagoi.webp"
+  },
+  "resources/js/UI/Destinations/Mangrove.webp": {
+    "file": "assets/Mangrove-DDZPIpj5.webp",
+    "src": "resources/js/UI/Destinations/Mangrove.webp"
+  },
+  "resources/js/UI/Destinations/PasirPutih.webp": {
+    "file": "assets/PasirPutih-I9kI1KdH.webp",
+    "src": "resources/js/UI/Destinations/PasirPutih.webp"
+  },
+  "resources/js/UI/Destinations/Penyengat.webp": {
+    "file": "assets/Penyengat-nuNa9aY3.webp",
+    "src": "resources/js/UI/Destinations/Penyengat.webp"
+  },
+  "resources/js/UI/Destinations/SafariLagoi.webp": {
+    "file": "assets/SafariLagoi-DTRhvz8G.webp",
+    "src": "resources/js/UI/Destinations/SafariLagoi.webp"
+  },
+  "resources/js/UI/Destinations/TreasureBay.webp": {
+    "file": "assets/TreasureBay-hWUih9vA.webp",
+    "src": "resources/js/UI/Destinations/TreasureBay.webp"
+  },
+  "resources/js/UI/Destinations/Trikora.webp": {
+    "file": "assets/Trikora-BPEHPOTY.webp",
+    "src": "resources/js/UI/Destinations/Trikora.webp"
+  },
+  "resources/js/UI/Destinations/ViharaAvalokitesvara.webp": {
+    "file": "assets/ViharaAvalokitesvara-CShEIPH3.webp",
+    "src": "resources/js/UI/Destinations/ViharaAvalokitesvara.webp"
+  },
+  "resources/js/UI/Destinations/danaubiru.webp": {
+    "file": "assets/danaubiru-BNqxvlkO.webp",
+    "src": "resources/js/UI/Destinations/danaubiru.webp"
+  },
+  "resources/js/UI/Documentation/Beauty.webp": {
+    "file": "assets/Beauty-DXR1kcZu.webp",
+    "src": "resources/js/UI/Documentation/Beauty.webp"
+  },
+  "resources/js/UI/Documentation/Jetski.webp": {
+    "file": "assets/Jetski-Q9ElVtNk.webp",
+    "src": "resources/js/UI/Documentation/Jetski.webp"
+  },
+  "resources/js/UI/Documentation/Nemo.webp": {
+    "file": "assets/Nemo-DDdLW4XI.webp",
+    "src": "resources/js/UI/Documentation/Nemo.webp"
+  },
+  "resources/js/UI/Documentation/Snorkeling.webp": {
+    "file": "assets/Snorkeling-CYS9ZOed.webp",
+    "src": "resources/js/UI/Documentation/Snorkeling.webp"
+  },
+  "resources/js/UI/Documentation/Sunset.webp": {
+    "file": "assets/Sunset-lJrZHt3t.webp",
+    "src": "resources/js/UI/Documentation/Sunset.webp"
+  },
+  "resources/js/UI/Gallery/Snorkeling.webp": {
+    "file": "assets/Snorkeling-D3NQuuCE.webp",
+    "src": "resources/js/UI/Gallery/Snorkeling.webp"
+  },
+  "resources/js/UI/Gallery/Snorkeling2.webp": {
+    "file": "assets/Snorkeling2-yNivkIa-.webp",
+    "src": "resources/js/UI/Gallery/Snorkeling2.webp"
+  },
+  "resources/js/UI/Gallery/islandtour.webp": {
+    "file": "assets/islandtour-a8J84Xwv.webp",
+    "src": "resources/js/UI/Gallery/islandtour.webp"
+  },
+  "resources/js/UI/Gallery/islandtour2.webp": {
+    "file": "assets/islandtour2-BXX7QsLF.webp",
+    "src": "resources/js/UI/Gallery/islandtour2.webp"
+  },
+  "resources/js/UI/Gallery/islandtour3.webp": {
+    "file": "assets/islandtour3-Di6L74tz.webp",
+    "src": "resources/js/UI/Gallery/islandtour3.webp"
+  },
+  "resources/js/UI/Gallery/islandtour4.webp": {
+    "file": "assets/islandtour4-DIxGuw-H.webp",
+    "src": "resources/js/UI/Gallery/islandtour4.webp"
+  },
+  "resources/js/UI/Gallery/islandtour5.webp": {
+    "file": "assets/islandtour5-DL84A9_b.webp",
+    "src": "resources/js/UI/Gallery/islandtour5.webp"
+  },
+  "resources/js/UI/Gallery/islandtour6.webp": {
+    "file": "assets/islandtour6-Bg8RVX_e.webp",
+    "src": "resources/js/UI/Gallery/islandtour6.webp"
+  },
+  "resources/js/UI/Gallery/islandtour7.webp": {
+    "file": "assets/islandtour7-D6QmS5SM.webp",
+    "src": "resources/js/UI/Gallery/islandtour7.webp"
+  },
+  "resources/js/UI/Gallery/islandtour8.webp": {
+    "file": "assets/islandtour8-CqxS_zak.webp",
+    "src": "resources/js/UI/Gallery/islandtour8.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong.webp": {
+    "file": "assets/lifeatkelong-DxUm-BxK.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong2.webp": {
+    "file": "assets/lifeatkelong2-Dw80L4cW.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong2.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong3.webp": {
+    "file": "assets/lifeatkelong3-oSovdeOi.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong3.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong4.webp": {
+    "file": "assets/lifeatkelong4-CBHSiL0-.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong4.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong5.webp": {
+    "file": "assets/lifeatkelong5-BhpSpvMl.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong5.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong6.webp": {
+    "file": "assets/lifeatkelong6-CShnFCVL.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong6.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong7.webp": {
+    "file": "assets/lifeatkelong7-D1KjiCNj.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong7.webp"
+  },
+  "resources/js/UI/Gallery/lifeatkelong8.webp": {
+    "file": "assets/lifeatkelong8-PYWu6xjV.webp",
+    "src": "resources/js/UI/Gallery/lifeatkelong8.webp"
+  },
+  "resources/js/UI/Gallery/snorkeling3.webp": {
+    "file": "assets/snorkeling3-JJE12H4P.webp",
+    "src": "resources/js/UI/Gallery/snorkeling3.webp"
+  },
+  "resources/js/UI/Gallery/snorkeling4.webp": {
+    "file": "assets/snorkeling4-DV1Wrjea.webp",
+    "src": "resources/js/UI/Gallery/snorkeling4.webp"
+  },
+  "resources/js/UI/Gallery/snorkeling5.webp": {
+    "file": "assets/snorkeling5-Ck_W01-S.webp",
+    "src": "resources/js/UI/Gallery/snorkeling5.webp"
+  },
+  "resources/js/UI/Gallery/snorkeling6.webp": {
+    "file": "assets/snorkeling6-K661rHnk.webp",
+    "src": "resources/js/UI/Gallery/snorkeling6.webp"
+  },
+  "resources/js/UI/Gallery/snorkeling7.webp": {
+    "file": "assets/snorkeling7-CU9w1dAs.webp",
+    "src": "resources/js/UI/Gallery/snorkeling7.webp"
+  },
+  "resources/js/UI/Gallery/snorkeling8.webp": {
+    "file": "assets/snorkeling8-C_DVQfgU.webp",
+    "src": "resources/js/UI/Gallery/snorkeling8.webp"
+  },
+  "resources/js/UI/images/Bintan Neemo.webp": {
+    "file": "assets/Bintan Neemo-CXGIM7Eh.webp",
+    "src": "resources/js/UI/images/Bintan Neemo.webp"
+  },
+  "resources/js/UI/images/Boat.webp": {
+    "file": "assets/Boat-BiwN94Wj.webp",
+    "src": "resources/js/UI/images/Boat.webp"
+  },
+  "resources/js/UI/images/Majorly.png": {
+    "file": "assets/Majorly-BT74Db6Q.png",
+    "src": "resources/js/UI/images/Majorly.png"
+  },
+  "resources/js/UI/images/Neemo.webp": {
+    "file": "assets/Neemo-DNce7dXz.webp",
+    "src": "resources/js/UI/images/Neemo.webp"
+  },
+  "resources/js/UI/images/NeemoKel.webp": {
+    "file": "assets/NeemoKel-CC31g2bm.webp",
+    "src": "resources/js/UI/images/NeemoKel.webp"
+  },
+  "resources/js/UI/images/Residence.png": {
+    "file": "assets/Residence-Buq9rc6h.png",
+    "src": "resources/js/UI/images/Residence.png"
+  },
+  "resources/js/UI/images/Rompi.webp": {
+    "file": "assets/Rompi-Qkt8jH-k.webp",
+    "src": "resources/js/UI/images/Rompi.webp"
+  },
+  "resources/js/UI/images/Snorkling.webp": {
+    "file": "assets/Snorkling-UB756Wy6.webp",
+    "src": "resources/js/UI/images/Snorkling.webp"
+  },
+  "resources/js/UI/images/Tourism.webp": {
+    "file": "assets/Tourism-DJYHjukP.webp",
+    "src": "resources/js/UI/images/Tourism.webp"
+  },
+  "resources/js/UI/images/transport-1.png": {
+    "file": "assets/transport-1-C32IU8GV.png",
+    "src": "resources/js/UI/images/transport-1.png"
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-BMtsm0PI.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/Home.jsx",
+      "resources/js/Pages/Policy/Legal.jsx",
+      "resources/js/Pages/Policy/Privacy.jsx",
+      "resources/js/Pages/Policy/SalesAndRefunds.jsx",
+      "resources/js/Pages/Policy/Terms.jsx"
+    ],
+    "css": [
+      "assets/app-BNXQi4Rd.css"
+    ]
+  }
+}
