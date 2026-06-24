@@ -14,7 +14,7 @@ export default function Transportation() {
             badge: "Free",
             icon: <FaCar className="h-6 w-6 text-green-500" />,
             detail: "Trikora Beach Area <-> Jetty Bintan Nemo",
-            note: "One of a Kind Hotel, Ten Rooms, Bintan Spa Villa, Bintan Agro, River Kawal, Marjoly, Halo Bintan",
+            note: "One of a Kind Hotel, Kawaland Glamping, Ten Rooms, Bintan Spa Villa, Bintan Agro, River Kawal, Marjoly, Halo Bintan",
             capacity: 5,
             image: Majortly,
         },
