@@ -3,7 +3,7 @@ import { CheckCircle } from "lucide-react";
 
 const packages = [
     {
-        title: "2 Days 1 Night",
+        title: "Stay Packages (2 Days 1 Night)",
         pricing: [
             { label: "Adult", value: "SGD $100" },
             { label: "Kid", note: "4-10 years old", value: "SGD $75" },
@@ -11,14 +11,14 @@ const packages = [
         whatsappMessage:
             "Hello, I want to go to Bintan Neemo with the 2 Days 1 Night package (SGD $100). Could you please provide more information?",
         features: [
-            "Two ways transfer boat",
+            "Transfer Boat 2 ways",
             "Welcome Drink",
             "Breakfast",
             "Dinner Seafood Menu (Crab, Prawn, Squid, Fish, Clam, Veggies & Rice)",
             "Unlimited Activity Snorkeling, Kayaking & Fun Fishing",
             "Underwater Documentation (GoPro 13 Black / GoPro 11 / DJI Action Camera)",
-            "Special Night Snorkeling Experience",
             "Unlimited Coffee & Tea",
+            "Special Night Snorkeling Experience",
             "Karaoke Night Fun",
         ],
         cardStyle: "bg-white text-[#1F2937] border border-gray-200",
@@ -36,11 +36,12 @@ const packages = [
         features: [
             "Transfer Boat 2 ways",
             "Welcome Drink",
-            "Simple Lunch (Fried Rice / Fried Noodle / Instant Cup Noodle)",
+            "Simple Lunch",
             "Unlimited Activity Snorkeling, Kayaking & Fun Fishing",
-            "Unlimited Coffee & Tea",
             "Free Documentation Underwater (GoPro 13 Black / GoPro 11 / DJI Action Camera)",
+            "Unlimited Coffee & Tea",
         ],
+        optionGroupTitle: "Menu Choose 1:",
         lunchOptions: ["Fried Rice", "Fried Noodle", "Instant Cup Noodle"],
         cardStyle: "bg-[#0096C7] text-white border-2 border-white",
         buttonStyle: "bg-white text-[#0096C7] hover:bg-gray-100",
@@ -57,10 +58,20 @@ const packages = [
         features: [
             "Transfer Boat 2 ways",
             "Welcome Drink",
-            "Seafood Lunch Menu (Crab, Prawn, Squid, Fish, Clam, Veggies & Rice)",
+            "Seafood Lunch",
             "Unlimited Activity Snorkeling, Kayaking & Fun Fishing",
             "Free Documentation Underwater (GoPro 13 Black / GoPro 11 / DJI Action Camera)",
             "Unlimited Coffee & Tea",
+        ],
+        optionGroupTitle: "Menu Seafood:",
+        menuOptions: [
+            "Crab",
+            "Prawn",
+            "Squid",
+            "Clam (Remis, Kerang / Gonggong)",
+            "Fish",
+            "Vegetables",
+            "Rice",
         ],
         cardStyle: "bg-white text-[#1F2937] border border-gray-200",
         buttonStyle: "bg-[#0096C7] text-white hover:bg-[#0077A8]",
@@ -111,19 +122,23 @@ export default function Pricing() {
                                 {pkg.pricing.map((price, priceIndex) => (
                                     <div
                                         key={priceIndex}
-                                        className="flex items-baseline justify-between gap-4 pb-2 border-b border-current/15 last:border-b-0 last:pb-0"
+                                        className="flex items-start justify-between gap-4 pb-2 border-b border-current/15 last:border-b-0 last:pb-0"
                                     >
-                                        <div className="min-w-0">
+                                        <div
+                                            className={`min-w-0 leading-none ${
+                                                price.note ? "" : "pt-3"
+                                            }`}
+                                        >
                                             <span className="block text-sm font-semibold uppercase tracking-[0.2em] opacity-75">
                                                 {price.label}
                                             </span>
                                             {price.note ? (
-                                                <span className="block text-xs opacity-70">
+                                                <span className="block pt-0.5 text-xs opacity-70">
                                                     {price.note}
                                                 </span>
                                             ) : null}
                                         </div>
-                                        <span className="text-3xl font-extrabold whitespace-nowrap">
+                                        <span className="pt-0.5 text-xl font-extrabold leading-none whitespace-nowrap md:text-2xl">
                                             {price.value}
                                         </span>
                                     </div>
@@ -148,7 +163,7 @@ export default function Pricing() {
                             {pkg.lunchOptions ? (
                                 <div className="mt-5">
                                     <p className="text-sm font-semibold opacity-90">
-                                        Simple Lunch - Choose 1:
+                                        {pkg.optionGroupTitle}
                                     </p>
                                     <div className="mt-2 space-y-2">
                                         {pkg.lunchOptions.map((option) => (
@@ -180,6 +195,31 @@ export default function Pricing() {
                                             </label>
                                         ))}
                                     </div>
+                                </div>
+                            ) : null}
+                            {pkg.menuOptions ? (
+                                <div className="mt-5">
+                                    <p className="text-sm font-semibold opacity-90">
+                                        {pkg.optionGroupTitle}
+                                    </p>
+                                    <ul className="mt-2 space-y-1 text-sm">
+                                        {pkg.menuOptions.map((option) => (
+                                            <li
+                                                key={option}
+                                                className="flex items-start gap-2"
+                                            >
+                                                <span
+                                                    className={`mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full ${
+                                                        pkg.title ===
+                                                        "Day Trip + Lunch Seafood"
+                                                            ? "bg-[#0096C7]"
+                                                            : "bg-current"
+                                                    }`}
+                                                />
+                                                <span>{option}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             ) : null}
 
