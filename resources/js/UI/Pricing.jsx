@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { CheckCircle } from "lucide-react";
 
 const packages = [
@@ -41,6 +41,7 @@ const packages = [
             "Unlimited Coffee & Tea",
             "Free Documentation Underwater (GoPro 13 Black / GoPro 11 / DJI Action Camera)",
         ],
+        lunchOptions: ["Fried Rice", "Fried Noodle", "Instant Cup Noodle"],
         cardStyle: "bg-[#0096C7] text-white border-2 border-white",
         buttonStyle: "bg-white text-[#0096C7] hover:bg-gray-100",
         iconColor: "text-white",
@@ -68,6 +69,20 @@ const packages = [
 ];
 
 export default function Pricing() {
+    const [selectedLunches, setSelectedLunches] = useState({
+        "Daytrip + Simple Lunch": "Fried Rice",
+    });
+
+    const getWhatsappMessage = (pkg) => {
+        if (pkg.title === "Daytrip + Simple Lunch") {
+            const selectedLunch = selectedLunches[pkg.title];
+
+            return `Hello, I want to go to Bintan Neemo with the Daytrip + Simple Lunch package (Adult SGD $45 / Kid SGD $35). My Simple Lunch choice is ${selectedLunch}. Could you please provide more information?`;
+        }
+
+        return pkg.whatsappMessage;
+    };
+
     return (
         <section
             id="pricing"
@@ -130,6 +145,44 @@ export default function Pricing() {
                                 ))}
                             </ul>
 
+                            {pkg.lunchOptions ? (
+                                <div className="mt-5">
+                                    <p className="text-sm font-semibold opacity-90">
+                                        Simple Lunch - Choose 1:
+                                    </p>
+                                    <div className="mt-2 space-y-2">
+                                        {pkg.lunchOptions.map((option) => (
+                                            <label
+                                                key={option}
+                                                className="flex items-center gap-3 text-sm cursor-pointer"
+                                            >
+                                                <input
+                                                    type="radio"
+                                                    name={`${pkg.title}-lunch`}
+                                                    value={option}
+                                                    checked={
+                                                        selectedLunches[
+                                                            pkg.title
+                                                        ] === option
+                                                    }
+                                                    onChange={() =>
+                                                        setSelectedLunches(
+                                                            (current) => ({
+                                                                ...current,
+                                                                [pkg.title]:
+                                                                    option,
+                                                            }),
+                                                        )
+                                                    }
+                                                    className="w-4 h-4 accent-white"
+                                                />
+                                                <span>{option}</span>
+                                            </label>
+                                        ))}
+                                    </div>
+                                </div>
+                            ) : null}
+
                         </div>
 
                         <button
@@ -138,7 +191,7 @@ export default function Pricing() {
                                 const whatsappUrl =
                                     "https://wa.me/6282283649331?text=" +
                                     encodeURIComponent(
-                                        pkg.whatsappMessage,
+                                        getWhatsappMessage(pkg),
                                     );
                                 window.open(whatsappUrl, "_blank");
                             }}
